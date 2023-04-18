@@ -40,6 +40,7 @@ export default function Page() {
               brand: event.target.value,
             }))
           }}
+          className="border"
         />
       </div>
       <div>
@@ -52,7 +53,7 @@ export default function Page() {
               title: event.target.value,
             }))
           }}
-          className="border-0"
+          className="border"
         />
       </div>
       <div>
@@ -79,6 +80,7 @@ export default function Page() {
               createdAt: Timestamp.fromDate(new Date(event.target.value)),
             }))
           }}
+          className="border"
         />
       </div>
       <div>
@@ -91,10 +93,11 @@ export default function Page() {
               updatedAt: Timestamp.fromDate(new Date(event.target.value)),
             }))
           }}
+          className="border"
         />
       </div>
       <div>
-        <input type="submit" />
+        <input type="submit" className="border" />
       </div>
     </form>
   )
