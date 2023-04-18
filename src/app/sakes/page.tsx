@@ -34,8 +34,8 @@ export default async function Page() {
             />
           </div>
 
-          <div className="absolute bottom-0 left-0 w-full bg-black pl-1 bg-opacity-40">
-            <span className="text-sm pr-1">{sake.brand}</span>
+          <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-40 pl-1">
+            <span className="pr-1 text-sm">{sake.brand}</span>
             <span className="text-xs">{sake.title}</span>
           </div>
         </div>
