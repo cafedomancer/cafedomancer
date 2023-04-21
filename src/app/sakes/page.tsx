@@ -36,10 +36,9 @@ export default async function Page() {
             />
           </div>
 
-          <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-40 pl-1 leading-none text-white">
+          <div className="absolute bottom-0 left-0 flex w-full flex-col bg-black bg-opacity-40 pl-1  text-white">
             <span className="pr-1 text-[0.675rem] ">{sake.brand}</span>
-            <br />
-            <span className="text-[0.5rem]">{sake.title || '(未設定)'}</span>
+            <span className="text-[0.5rem]">{sake.title || '(no title)'}</span>
           </div>
         </div>
       ))}
