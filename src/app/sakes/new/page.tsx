@@ -31,7 +31,7 @@ export default function Page() {
       className="flex flex-col gap-1 p-1"
     >
       <div>
-        <label>Brand</label>
+        <label className="mr-1">Brand</label>
         <input
           type="text"
           onChange={(event) => {
@@ -40,11 +40,10 @@ export default function Page() {
               brand: event.target.value,
             }))
           }}
-          className="border"
         />
       </div>
       <div>
-        <label>Title</label>
+        <label className="mr-1">Title</label>
         <input
           type="text"
           onChange={(event) => {
@@ -53,11 +52,10 @@ export default function Page() {
               title: event.target.value,
             }))
           }}
-          className="border"
         />
       </div>
       <div>
-        <label>Image</label>
+        <label className="mr-1">Image</label>
         <input
           type="file"
           onChange={(event) => {
@@ -71,7 +69,7 @@ export default function Page() {
         />
       </div>
       <div>
-        <label>Created At</label>
+        <label className="mr-1">Created At</label>
         <input
           type="datetime-local"
           onChange={(event) => {
@@ -80,11 +78,10 @@ export default function Page() {
               createdAt: Timestamp.fromDate(new Date(event.target.value)),
             }))
           }}
-          className="border"
         />
       </div>
       <div>
-        <label>Updated At</label>
+        <label className="mr-1">Updated At</label>
         <input
           type="datetime-local"
           onChange={(event) => {
@@ -93,11 +90,10 @@ export default function Page() {
               updatedAt: Timestamp.fromDate(new Date(event.target.value)),
             }))
           }}
-          className="border"
         />
       </div>
       <div>
-        <input type="submit" className="border" />
+        <input type="submit" />
       </div>
     </form>
   )
